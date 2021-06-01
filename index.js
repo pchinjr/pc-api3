@@ -6,6 +6,6 @@ exports.handler = async function http(req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0'
     },
     statusCode: 200,
-    body: JSON.stringify({ok: true})
+    body: JSON.stringify({ image: `${process.env.BEGIN_STATIC_ORIGIN}/1.jpeg`})
   }
 }
